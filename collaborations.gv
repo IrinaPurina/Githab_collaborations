@@ -1,0 +1,90 @@
+// Collaborations
+graph {
+	kostaNew [label=kostaNew]
+	koshinus [label=koshinus]
+	Genraim [label=Genraim]
+	CLearERR [label=CLearERR]
+	gogoleff [label=gogoleff]
+	denchistyakov [label=denchistyakov]
+	Zhigalov [label=Zhigalov]
+	mokhov [label=mokhov]
+	node [color=lightgrey style=filled]
+	node [group="kostaNew/git-study-blas"]
+	"kostaNew/git-study-blas" [label="kostaNew/git-study-blas"]
+		kostaNew -- "kostaNew/git-study-blas"
+		Genraim -- "kostaNew/git-study-blas"
+		CLearERR -- "kostaNew/git-study-blas"
+		koshinus -- "kostaNew/git-study-blas"
+	node [group="urfu-2015/javascript-tasks-1"]
+	"urfu-2015/javascript-tasks-1" [label="urfu-2015/javascript-tasks-1"]
+		gogoleff -- "urfu-2015/javascript-tasks-1"
+		mokhov -- "urfu-2015/javascript-tasks-1"
+	node [group="urfu-2016/demo-task-1"]
+	"urfu-2016/demo-task-1" [label="urfu-2016/demo-task-1"]
+		gogoleff -- "urfu-2016/demo-task-1"
+		Zhigalov -- "urfu-2016/demo-task-1"
+	node [group="urfu-2016/guides"]
+	"urfu-2016/guides" [label="urfu-2016/guides"]
+		gogoleff -- "urfu-2016/guides"
+		Zhigalov -- "urfu-2016/guides"
+	node [group="urfu-2015/javascript-lectures"]
+	"urfu-2015/javascript-lectures" [label="urfu-2015/javascript-lectures"]
+		gogoleff -- "urfu-2015/javascript-lectures"
+		mokhov -- "urfu-2015/javascript-lectures"
+		Zhigalov -- "urfu-2015/javascript-lectures"
+	node [group="urfu-2015/javascript-slides"]
+	"urfu-2015/javascript-slides" [label="urfu-2015/javascript-slides"]
+		gogoleff -- "urfu-2015/javascript-slides"
+		Zhigalov -- "urfu-2015/javascript-slides"
+	node [group="urfu-2016/javascript-slides"]
+	"urfu-2016/javascript-slides" [label="urfu-2016/javascript-slides"]
+		gogoleff -- "urfu-2016/javascript-slides"
+		Zhigalov -- "urfu-2016/javascript-slides"
+		denchistyakov -- "urfu-2016/javascript-slides"
+	node [group="urfu-2015/javascript-tasks-5"]
+	"urfu-2015/javascript-tasks-5" [label="urfu-2015/javascript-tasks-5"]
+		gogoleff -- "urfu-2015/javascript-tasks-5"
+		mokhov -- "urfu-2015/javascript-tasks-5"
+	node [group="urfu-2015/javascript-tasks-7"]
+	"urfu-2015/javascript-tasks-7" [label="urfu-2015/javascript-tasks-7"]
+		gogoleff -- "urfu-2015/javascript-tasks-7"
+		mokhov -- "urfu-2015/javascript-tasks-7"
+	node [group="urfu-2015/verstka-slides"]
+	"urfu-2015/verstka-slides" [label="urfu-2015/verstka-slides"]
+		gogoleff -- "urfu-2015/verstka-slides"
+		mokhov -- "urfu-2015/verstka-slides"
+	node [group="urfu-2015/verstka-tasks-1"]
+	"urfu-2015/verstka-tasks-1" [label="urfu-2015/verstka-tasks-1"]
+		gogoleff -- "urfu-2015/verstka-tasks-1"
+		mokhov -- "urfu-2015/verstka-tasks-1"
+	node [group="urfu-2015/verstka-tasks-5"]
+	"urfu-2015/verstka-tasks-5" [label="urfu-2015/verstka-tasks-5"]
+		mokhov -- "urfu-2015/verstka-tasks-5"
+		gogoleff -- "urfu-2015/verstka-tasks-5"
+	node [group="urfu-2015/webdev-slides"]
+	"urfu-2015/webdev-slides" [label="urfu-2015/webdev-slides"]
+		gogoleff -- "urfu-2015/webdev-slides"
+		mokhov -- "urfu-2015/webdev-slides"
+		Zhigalov -- "urfu-2015/webdev-slides"
+	node [group="urfu-2016/webdev-slides"]
+	"urfu-2016/webdev-slides" [label="urfu-2016/webdev-slides"]
+		gogoleff -- "urfu-2016/webdev-slides"
+		mokhov -- "urfu-2016/webdev-slides"
+		denchistyakov -- "urfu-2016/webdev-slides"
+	node [group="yandex-shri-ekb/6-api-and-markup"]
+	"yandex-shri-ekb/6-api-and-markup" [label="yandex-shri-ekb/6-api-and-markup"]
+		denchistyakov -- "yandex-shri-ekb/6-api-and-markup"
+		mokhov -- "yandex-shri-ekb/6-api-and-markup"
+	node [group="urfu-2015/webdev-tasks-1"]
+	"urfu-2015/webdev-tasks-1" [label="urfu-2015/webdev-tasks-1"]
+		mokhov -- "urfu-2015/webdev-tasks-1"
+		gogoleff -- "urfu-2015/webdev-tasks-1"
+	node [group="urfu-2016/markup-slides"]
+	"urfu-2016/markup-slides" [label="urfu-2016/markup-slides"]
+		mokhov -- "urfu-2016/markup-slides"
+		gogoleff -- "urfu-2016/markup-slides"
+	node [group="urfu-2016/markup-task-4"]
+	"urfu-2016/markup-task-4" [label="urfu-2016/markup-task-4"]
+		mokhov -- "urfu-2016/markup-task-4"
+		gogoleff -- "urfu-2016/markup-task-4"
+}

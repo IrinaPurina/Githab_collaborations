@@ -1,14 +1,14 @@
 from github import Github
+from graphviz import Graph
 
-# users = ["kostaNew", "koshinus", "arkaev", "Genraim", "CLearERR", "gogoleff", "denchistyakov", "Zhigalov", "trixartem", "mokhov"]
-users = ["kostaNew", "koshinus"]
+users = ["kostaNew", "koshinus", "Genraim", "CLearERR", "gogoleff", "denchistyakov", "Zhigalov", "mokhov"]
 
 def get_collaborations(users):
-    gitHub = Github()
+    github = Github()
 
     projects = []
     for user in users:
-        repos = gitHub.get_user(user).get_repos()
+        repos = github.get_user(user).get_repos()
         for repo in repos:
             if repo.fork:
                 projects.append(repo.source)
@@ -24,11 +24,23 @@ def get_collaborations(users):
 
     return collaborations
 
+
+def render_collaborations(collaborations):
+    dot = Graph(comment="Collaborations")
+
+    for user in users:
+        dot.node(user, user)
+
+    dot.attr("node", style="filled", color="lightgrey")
+    for key in collaborations:
+        contributors = collaborations[key]
+        dot.attr("node", group=key)
+        dot.node(key, key)
+        for contributor in contributors:
+            dot.edge(contributor.login, key)
+
+    dot.render('collaborations.gv', view=True)
+
+
 collaborations = get_collaborations(users)
-
-for key in collaborations:
-    contributors = collaborations[key]
-    print(key)
-    for contributor in contributors:
-        print(contributor.login)
-
+render_collaborations(collaborations)
